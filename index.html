@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvimento de caso prático com utilização de Bootstrap">
+    <meta name="author" content="Eder Matias">
+    <meta name="keywords" content="Iza, Dona de Mim, Afrodhit, Cantora, Pesadão, Brasil, Lisboa, Fé">
+
+    <title>HomePage - Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/f6ae1c8641.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="image/iza_header.jpg" alt="Banner Iza">
+        </div>
+
+        <nav>
+            <div id="menus">
+                <a href="#">Home</a>
+                <a href="pages/sobre.html">Sobre</a>
+                <div class="dropdown">
+                    <a href="pages/discografia.html">Discografia</a>
+
+                    <div class="dropdown_menu">
+                        <a href="#discografia">Dona de Mim</a>
+                        <a href="#discografia">Afrodhit</a>
+                    </div>
+                </div>
+                <a href="pages/concertos.html">Concertos</a>
+                <a href="pages/contactos.html">Contactos</a>
+            </div>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h1>Iza</h1>
+            <p>
+                Isabela Cristina Correia de Lima Lima, mais conhecida pelo seu nome artístico Iza, é uma
+                cantora, compositora, apresentadora e publicitária brasileira. Seu primeiro álbum, Dona de Mim,
+                foi lançado em 2018 e recebeu uma indicação ao Grammy Latino de Melhor Álbum Pop Contemporâneo
+                em Língua Portuguesa. Em 2019, Iza estreou como jurada no The Voice Brasil e foi anunciada como
+                rainha de bateria da Imperatriz Leopoldinense.
+            </p>
+            <p>
+                Nascida e criada no bairro de Olaria no Rio de Janeiro, Iza é filha da professora de música e
+                artes Isabel Cristina Lima e do militar naval Djama Leite Lima. Iza começou a cantar na Igreja
+                aos 14 anos e começou a fazer apresentações em paróquias e outros eventos.
+            </p>
+            <p>
+                O estilo musical de Iza é classificado majoritariamente como R&B, mas ela inclui outros gêneros
+                específicos em algumas canções como o pop, reggae fusion e o soul, além de já ter colocado
+                elementos da cultura afro-brasileira nas suas canções, como o berimbau em "Ginga". Iza citou
+                como suas maiores referências musicais as cantoras Etta James, Donna Summer, Elza Soares,
+                Alcione, Rihanna e Beyoncé.
+            </p>
+        </section>
+
+        <section id="discografia">
+            <div class="discografia_titulo">
+                <h2>Discografia</h2>
+            </div>
+
+            <div class="discografia_albuns">
+                <div class="albuns">
+                    <img src="image/disco-dona-de-mim.jpg" alt="Dona de Mim">
+                    <p>
+                        Dona de Mim
+                    </p>
+                </div>
+                <div class="albuns">
+                    <img src="image/disco-afrodhit" alt="Afrodhit">
+                    <p>
+                        Afrodhit
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="concertos">
+            <div class="concertos_titulo">
+                <h2>Concertos</h2>
+            </div>
+
+            <div class="concertos_locais">
+                <div class="concertos_descricao">
+                    <img src="image/rock_in_rio.png" alt="Rock in Rio" title="Rock in Rio">
+                    <p>
+                        Rock in Rio
+                    </p>
+                </div>
+
+                <div class="concertos_descricao par">
+                    <p>
+                        La Folie Festival
+                    </p>
+                    <img src="image/la_folie_festival.jpg" alt="La Folie Festival" title="La Folie Festival">
+                </div>
+
+                <div class="concertos_descricao">
+                    <img src="image/festival_de_verao.jpg" alt="Festival de Verão Salvador"
+                        title="Festival de Verão Salvador">
+                    <p>
+                        Festival de Verão Salvador
+                    </p>
+                </div>
+
+                <div class="concertos_descricao par">
+                    <p>
+                        The Town
+                    </p>
+                    <img src="image/the_town.png" alt="The Town" title="The Town">
+                </div>
+            </div>
+        </section>
+
+        <section id="contactos">
+            <div class="contactos_mail_phone">
+                <h2 class="contactos_titulo">Fale Conosco</h2>
+
+                <a href="mailto:iza.comercial@agenciademusica.com.br">
+                    <i class="fa-solid fa-envelope"></i> iza.comercial@agenciademusica.com.br
+                </a>
+
+                <a href="https://web.whatsapp.com/send?phone=5511 34591991" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> +55 11 3459-1991
+                </a>
+            </div>
+
+            <div class="formulario">
+                <div class="mb-0">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+                </div>
+
+                <div class="mb-0">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Digite seu email">
+                </div>
+
+                <div class="mb-0">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="8"
+                        placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <button class="form_btn" type="submit">
+                    Enviar
+                </button>
+            </div>
+        </section>
+
+    </main>
+    
+    <aside id="redes_sociais">
+        <div class="redes_sociais_titulo">
+            <h2>Redes Sociais</h2>
+        </div>
+
+        <div class="medias_sociais">
+            <div class="medias_icones">
+                <a href="https://www.instagram.com/iza/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="medias_icones">
+                <a href="https://twitter.com/IzaReal?s=20" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            
+            <div class="medias_icones">
+                <a href="https://open.spotify.com/intl-pt/artist/3zgnrYIltMkgeejmvMCnes" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            </div>
+            <div class="medias_icones">
+                <a href="https://music.apple.com/br/artist/iza/173410059" target="_blank"><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <footer id="rodape">
+        <p>
+            Powered by Eder Matias &copy;
+        </p>
+    </footer>
+</body>
+
+</html>

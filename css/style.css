@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'iza';
+    src: url(../fonts/Lovelo\ Black.otf) format('opentype');
+}
+
+:root {
+    --cor0: #D9BD9C;
+    --cor1: #F2E5D5;
+    --cor2: #BF926B;
+    --cor3: #A65A2E;
+    --cor4: #401201;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-iza: 'iza', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: var(--font-padrao);
+    background-color: var(--cor1);
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2), var(--cor1));
+}
+
+#menus {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#menus a,
+.btn {
+    margin: 0 30px 0 0;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+#menus a:hover {
+    background-color: var(--cor3);
+    padding: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.btn {
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--cor3);
+}
+
+
+.dropdown_menu {
+    position: absolute;
+    display: none;
+    width: 150px;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    list-style: none;
+}
+
+.dropdown_menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    color: var(--cor1);
+}
+
+.dropdown:hover .dropdown_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_menu:hover {
+    padding: 0px;
+    transition: 1s;
+}
+
+#sobre {
+    max-width: 800px;
+    min-width: 320px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.419);
+    background-color: #fff;
+}
+
+#sobre h1 {
+    text-align: center;
+    font-family: var(--font-iza);
+    font-size: 40px;
+    padding: 20px 0;
+    color: var(--cor3);
+}
+
+#sobre p {
+    text-align: justify;
+    padding: 10px 30px;
+    color: var(--cor4);
+}
+
+#discografia {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0), var(--cor2));
+}
+
+.discografia_titulo,
+.concertos_titulo,
+.contactos_titulo,
+.redes_sociais_titulo {
+    text-align: center;
+    font-family: var(--font-iza);
+    color: var(--cor4);
+    padding-top: 40px;
+}
+
+.discografia_albuns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    padding: 40px 0;
+}
+
+.albuns img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.419);
+}
+
+.albuns img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.albuns p {
+    text-align: center;
+    font-family: var(--font-iza);
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--cor4);
+}
+
+
+
+.concertos_locais {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #000000d7;
+    border: 5px solid var(--cor3);
+}
+
+.concertos_descricao {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.concertos_descricao:hover {
+    opacity: 1;
+}
+
+.concertos_descricao p {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    padding: 20px;
+}
+
+.concertos_descricao img {
+    width: 150px;
+}
+
+.concertos_descricao img:hover {
+    width: 170px;
+    transition: 1s;
+}
+
+
+.concertos_locais .par {
+    position: relative;
+    top: 75px;
+}
+
+#contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, var(--cor2), var(--cor4), var(--cor2));
+    margin-top: 40px;
+}
+
+.contactos_mail_phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.contactos_mail_phone a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 45%;
+}
+
+.form_btn {
+    border: 2px solid var(--cor4);
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--cor4);
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: var(--cor1);
+}
+
+.form_btn:hover {
+    background-color: var(--cor4);
+    color: #fff;
+    transition: 0.5s;
+}
+
+#redes_sociais {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    padding-top: 40px;
+}
+
+.medias_sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 0;
+}
+
+.medias_icones a {
+    color: var(--cor1);
+    font-size: 60px;
+}
+
+#rodape {
+    text-align: center;
+    color: var(--cor3);
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.home_other_pages {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2), var(--cor1));
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.other_pages {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor4);
+    font-size: 100px;
+    font-family: var(--font-iza);
+}
+
+@media (max-width: 1000px) {
+    .concertos_locais {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .concertos_descricao img {
+        width: 150px;
+    }
+
+    .concertos_locais .par {
+        position: relative;
+        top: 0;
+    }
+
+    .par p {
+        position: relative;
+        top: 150px
+    }
+
+    .par img {
+        position: relative;
+        top: -80px;
+    }
+
+    .concertos_descricao img:hover {
+        width: 150px;
+        transition: 1s;
+    }
+}
+
+
+@media (max-width: 821px) {
+    #sobre {
+        margin: 30px 30px;
+    }
+
+    .formulario {
+        width: 75%;
+    }
+
+    .d-flex .form-control {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    #menus {
+        margin: 20px;
+    }
+
+    #menus a {
+        font-size: 14px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .discografia_albuns {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contactos_mail_phone,
+    .medias_sociais {
+        margin: 30px;
+        gap: 30px;
+    }
+
+    .contactos_mail_phone a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    .contactos_mail_phone a {
+        font-size: 16px;
+    }
+}
